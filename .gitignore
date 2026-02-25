@@ -12,8 +12,6 @@ __pycache__/
 # Virtual Environment
 # ==========================================
 venv/
-.env/
-.env.*
 .venv/
 
 # ==========================================
@@ -23,14 +21,13 @@ venv/
 .env.local
 .env.production
 .env.development
+!.env.example
 
 # ==========================================
 # IDE / Editors
 # ==========================================
 .vscode/
 .idea/
-*.sublime-workspace
-*.sublime-project
 
 # ==========================================
 # OS Files
@@ -57,7 +54,6 @@ logs/
 # Alembic
 # ==========================================
 migrations/__pycache__/
-alembic/versions/__pycache__/
 
 # ==========================================
 # Pytest / Coverage
@@ -71,7 +67,6 @@ coverage.xml
 # CSV Exports
 # ==========================================
 exports/
-*.csv
 
 # ==========================================
 # Build / Distribution
@@ -80,12 +75,6 @@ build/
 dist/
 *.egg-info/
 *.egg
-pip-wheel-metadata/
-
-# ==========================================
-# Jupyter (if ever used)
-# ==========================================
-.ipynb_checkpoints/
 
 # ==========================================
 # Temporary files

@@ -11,10 +11,6 @@ load_dotenv()
 
 TEST_DATABASE_URL = os.getenv("TEST_DATABASE_URL")
 
-# TEST_DATABASE_URL = (
-#     "postgresql+psycopg2://postgres:suraj123@localhost:5432/telegram_slot_test_db"
-# )
-
 engine = create_engine(TEST_DATABASE_URL)
 TestingSessionLocal = sessionmaker(
     autocommit=False,
